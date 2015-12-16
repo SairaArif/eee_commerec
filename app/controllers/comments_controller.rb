@@ -23,7 +23,7 @@ class CommentsController < ApplicationController
   def create
     @comment = @product.comments.new(params[:comment])
     @comment.save
-    redirect_to @comment.product
+    redirect_to @product
   end
 
   def update
